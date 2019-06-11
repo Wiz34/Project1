@@ -2,9 +2,9 @@ const DOMAIN = `https://api.waqi.info/feed/beijing/?token=e0bbf4f64d228f592181b5
 const API_KEY = `e0bbf4f64d228f592181b5b990abf28561194f95`;
 const Base_URL = ``
 const index = document.querySelector("#index_Data");
-const button = document.querySelector("button")
+const btn = document.querySelector("button")
 
-//button.addEventListener('click' async ())
+
 
 const air_Quality = async () => {
   const response = await axios.get(`${DOMAIN}`)
@@ -14,3 +14,6 @@ const air_Quality = async () => {
 
 
 air_Quality()
+
+const btn = document.querySelector('button')
+btn.addEventListener('click', handleInput);
