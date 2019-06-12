@@ -20,10 +20,9 @@ const render = (city) => {
 
   const cityDiv = document.createElement('div')
   cityDiv.innerHTML = `
-      <h4>${cityName}</h4>
-      <p>${AQI}
-      
-      <button> more details</button >
+      <h1>${cityName}</h1>
+      <h3>${AQI}</h3>
+      <button id='inbutt'> more details</button >
       `
   const detailsBtn = cityDiv.querySelector('button')
 
@@ -38,7 +37,6 @@ const render = (city) => {
 
     const detailContainer = document.createElement('div')
     detailContainer.innerHTML = `
-      <h4>${cityName}</h4>
       <h4>${time}</h4>
       <h4>${long_lat}
       <h4>${station_name}
