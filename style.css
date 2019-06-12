@@ -1,0 +1,35 @@
+const render = (cities) => {
+    const citylist = document.querySelector('.city-list')
+    citylist.innerHTML = '';
+  cities.forEach((city) => {
+  
+       const cityDiv = document.createElement('div')
+      cityDiv.innerHTML = `
+        <p>${input}</p>
+, {	    <img src='${movie.Poster}'/>
+   <button>more details</button>
+  
+       `
+  })	
+   console.log(response)	    const detailsBtn = movieDiv.querySelector('button')
+  }); 	    detailsBtn.addEventListener('click', async () => {
+        const details = document.querySelector('.movie-detail')
+        details.innerHTML = '';
+        const resp = await axios(`${BASE_URL}t=${movie.Title}`)
+        const movieInfo = resp.data;
+        const detailContainer = document.createElement('div')
+        detailContainer.innerHTML = `
+        <h3>${movieInfo.Title}</h3>
+        <p>Actors:${movieInfo.Actors}</p>
+        <p>Director:${movieInfo.Director}</p>
+        <p>${movieInfo.Plot}</p>`
+  
+         details.appendChild(detailContainer)
+  
+       })
+  
+       movielist.appendChild(movieDiv)
+    })
+  
+   }
+  
