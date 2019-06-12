@@ -42,8 +42,8 @@ const render = (city) => {
       <h4>${time}</h4>
       <h4>${long_lat}
       <h4>${station_name}
-      <h4>
-      <h4
+    
+      
 
 
       `
