@@ -1,11 +1,17 @@
-"clear AIR"
+"SPARE THE AIR"
 
-*app name is subect to change*
+*a
 
 this app will display real time air quality index for differnt countries worldwide
 
+
 features-
 search bar for the city or country that the user wants to recieve the information for
+the header
+THE AQI of each city will cause the header to change to one of 6 picutures rferncing that cities current air index number
+
+struggles;
+using css to style the pictures
 
 also using the map api to display the countries with markers above them referencing their current air quality
 
